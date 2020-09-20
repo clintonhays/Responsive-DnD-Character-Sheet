@@ -8,12 +8,13 @@
 </head>
 <body class="grid-container">
     <div class="character-name">
-        <h1>This is My Character's Name</h1>
+        <h1><input type="text" name="character" id="character" placeholder="Character's Name"></h1>
     </div>
     <div class="sprite">
         <p></p>
     </div>
     <div class="character-info">
+        <h2>Character Info</h2>
         <input type="text" name="race" id="race" placeholder="Race">
         <input type="text" name="gender" id="gender" placeholder="Gender">
         <input type="text" name="age" id="age" placeholder="Age">
@@ -22,9 +23,24 @@
         <input type="text" name="xp" id="xp" placeholder="XP">
     </div>
     <div class="stats">
-        <p>Prof Bonus</p>
-        <p>Inspiration</p>
-        <p>Inspiration</p>
+        <label for="prof"><p>Proficiency Bonus</p></label>
+        <input type="text" name="prof" id="prof">
+        <label for="inspiration"><p>Inspiration</p></label>
+        <input type="text" name="inspiration" id="inspiration">
+        <label for="strength"><p>Strength</p></label>
+        <input type="text" name="strength" id="strength">
+        <label for="dexterity"><p>Dexterity</p></label>
+        <input type="text" name="dexterity" id="dexterity">
+        <label for="constitution"><p>Constitution</p></label>
+        <input type="text" name="constitution" id="constitution">
+        <label for="intelligence"><p>Intelligence</p></label>
+        <input type="text" name="intelligence" id="intelligence">
+        <label for="wisdom"><p>Wisdom</p></label>
+        <input type="text" name="wisdom" id="wisdom">
+        <label for="charisma"><p>Charisma</p></label>
+        <input type="text" name="charisma" id="charisma">
+        <label for="perception"><p>Perception</p></label>
+        <input type="text" name="perception" id="perception">
     </div>
     <div class="ac-hp">
         <p></p>
