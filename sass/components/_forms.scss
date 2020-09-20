@@ -4,9 +4,9 @@
 
 .stats {
 	display: grid;
-	grid-template-columns: 100px 1fr;
+	grid-template-columns: 100px .5fr 1fr;
 	gap: 1.5em;
-	input {
+	.bonus {
 		width: 5em;
 		height: 5em;
 		text-align: center;
@@ -16,6 +16,30 @@
 
 		&:focus {
 			outline: none;
+		}
+	}
+
+	.savingThrows {
+		.baseSave {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			input {
+				width: 2em;
+				height: 2em;
+				text-align: center;
+			}
+		}
+
+		.skillSave {
+			display: grid;
+			grid-template-columns: repeat(2, 90px 2em);
+
+			input {
+				width: 2em;
+				height: 2em;
+			}
 		}
 	}
 }

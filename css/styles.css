@@ -492,11 +492,11 @@ h3 {
 
 .stats {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 100px .5fr 1fr;
   gap: 1.5em;
 }
 
-.stats input {
+.stats .bonus {
   width: 5em;
   height: 5em;
   text-align: center;
@@ -504,8 +504,30 @@ h3 {
   border: none;
 }
 
-.stats input:focus {
+.stats .bonus:focus {
   outline: none;
+}
+
+.stats .savingThrows .baseSave {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats .savingThrows .baseSave input {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+}
+
+.stats .savingThrows .skillSave {
+  display: grid;
+  grid-template-columns: repeat(2, 90px 2em);
+}
+
+.stats .savingThrows .skillSave input {
+  width: 2em;
+  height: 2em;
 }
 
 img {
