@@ -3,9 +3,19 @@
 //
 
 .stats {
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	gap: 1.5em;
 	input {
-		width: 2em;
-		height: 2em;
+		width: 5em;
+		height: 5em;
 		text-align: center;
+		-webkit-clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
+		clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
+		border: none;
+
+		&:focus {
+			outline: none;
+		}
 	}
 }
